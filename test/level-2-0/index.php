@@ -1,0 +1,7 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Уровень 2.0");
+?>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aliquam aliquid animi aperiam asperiores corporis deleniti doloremque earum eius eos ex itaque magnam minima, minus modi molestias mollitia nobis non obcaecati perferendis perspiciatis quis quo quod recusandae rem suscipit tempore. Commodi dignissimos dolores error ex expedita explicabo nesciunt quasi quidem tempora? Ab, at dolore dolores dolorum enim eveniet expedita hic in laboriosam maiores nihil possimus praesentium quod reprehenderit sint vitae voluptatem? Accusantium alias animi autem culpa cum, deleniti doloribus dolorum ducimus ea eligendi error eveniet excepturi explicabo facilis hic ipsum iusto laboriosam magni, maxime molestias, nulla quaerat quam quasi qui ratione reprehenderit repudiandae sequi veritatis voluptate voluptatum? A ad aperiam dolore eligendi exercitationem harum ipsa ipsam iure laudantium, magnam non omnis perferendis quidem quis repellendus soluta suscipit voluptatem. Ab ipsam modi quisquam sunt voluptate? A alias aliquid animi, commodi deserunt doloremque ea explicabo optio, praesentium quam quos sunt, vero.</p>
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
