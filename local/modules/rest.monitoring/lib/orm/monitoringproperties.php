@@ -2,8 +2,10 @@
 
 namespace Rest\Monitoring\Orm;
 
+use Bitrix\Main\ArgumentTypeException;
 use Bitrix\Main\Entity;
 use Bitrix\Main\Localization\Loc;
+use Exception;
 
 Loc::loadMessages(__FILE__);
 
@@ -25,7 +27,7 @@ class MonitoringPropertiesTable extends Entity\DataManager
     /**
      * Returns entity map definition.
      * @return array
-     * @throws \Exception
+     * @throws Exception
      */
     public static function getMap()
     {
@@ -51,7 +53,7 @@ class MonitoringPropertiesTable extends Entity\DataManager
     /**
      * Returns validators for NAME field.
      * @return array
-     * @throws \Bitrix\Main\ArgumentTypeException
+     * @throws ArgumentTypeException
      */
     public static function validateName()
     {
