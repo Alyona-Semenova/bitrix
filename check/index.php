@@ -2,6 +2,12 @@
 
 require_once $_SERVER["DOCUMENT_ROOT"] . '/bitrix/header.php';
 
-\CModule::IncludeModule("rest.monitoring");
+$APPLICATION->includeComponent(
+    'rest:monitoring.profile.manager',
+    '',
+    [
+        'PARAM' => '1',
+    ]
+);
 
 require_once $_SERVER["DOCUMENT_ROOT"] . '/bitrix/footer.php';

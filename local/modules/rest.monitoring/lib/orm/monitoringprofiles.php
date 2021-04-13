@@ -2,10 +2,8 @@
 
 namespace Rest\Monitoring\Orm;
 
-use Bitrix\Main\ArgumentTypeException;
 use Bitrix\Main\Entity;
 use Bitrix\Main\Localization\Loc;
-use Exception;
 
 Loc::loadMessages(__FILE__);
 
@@ -27,7 +25,7 @@ class MonitoringProfilesTable extends Entity\DataManager
     /**
      * Returns entity map definition.
      * @return array
-     * @throws Exception
+     * @throws \Exception
      */
     public static function getMap()
     {
@@ -55,17 +53,13 @@ class MonitoringProfilesTable extends Entity\DataManager
                 'values' => ['N', 'Y'],
                 'title' => Loc::getMessage('YLAB_CKECKUP_PROFILE_ACTIVITY_FIELD'),
             ]),
-            new Entity\BooleanField('STATUS_RESULT', [
-                'values' => ['N', 'Y'],
-                'title' => Loc::getMessage('YLAB_CKECKUP_PROFILE_STATUS_RESULT_FIELD'),
-            ]),
         ];
     }
 
     /**
      * Returns validators for NAME field.
      * @return array
-     * @throws ArgumentTypeException
+     * @throws \Bitrix\Main\ArgumentTypeException
      */
     public static function validateName()
     {
