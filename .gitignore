@@ -14,6 +14,8 @@ bower_components
 # logs
 /local/php_interface/logs/
 /local/logs/
+/local/vendor/
+
 
 # download files
 /upload/
